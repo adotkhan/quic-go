@@ -9,9 +9,9 @@ import (
 	net "net"
 	reflect "reflect"
 
+	quic "github.com/Psiphon-Labs/quic-go"
+	qerr "github.com/Psiphon-Labs/quic-go/internal/qerr" 
 	gomock "github.com/golang/mock/gomock"
-	quic "github.com/quic-go/quic-go"
-	qerr "github.com/quic-go/quic-go/internal/qerr"
 )
 
 // MockEarlyConnection is a mock of EarlyConnection interface.

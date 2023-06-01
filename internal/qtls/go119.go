@@ -10,7 +10,7 @@ import (
 	"net"
 	"unsafe"
 
-	"github.com/quic-go/qtls-go1-19"
+	"github.com/Psiphon-Labs/qtls-go1-19"
 )
 
 type (
@@ -84,7 +84,7 @@ type cipherSuiteTLS13 struct {
 	Hash   crypto.Hash
 }
 
-//go:linkname cipherSuiteTLS13ByID github.com/quic-go/qtls-go1-19.cipherSuiteTLS13ByID
+//go:linkname cipherSuiteTLS13ByID github.com/Psiphon-Labs/qtls-go1-19.cipherSuiteTLS13ByID
 func cipherSuiteTLS13ByID(id uint16) *cipherSuiteTLS13
 
 // CipherSuiteTLS13ByID gets a TLS 1.3 cipher suite.
@@ -99,13 +99,13 @@ func CipherSuiteTLS13ByID(id uint16) *CipherSuiteTLS13 {
 	}
 }
 
-//go:linkname cipherSuitesTLS13 github.com/quic-go/qtls-go1-19.cipherSuitesTLS13
+//go:linkname cipherSuitesTLS13 github.com/Psiphon-Labs/qtls-go1-19.cipherSuitesTLS13
 var cipherSuitesTLS13 []unsafe.Pointer
 
-//go:linkname defaultCipherSuitesTLS13 github.com/quic-go/qtls-go1-19.defaultCipherSuitesTLS13
+//go:linkname defaultCipherSuitesTLS13 github.com/Psiphon-Labs/qtls-go1-19.defaultCipherSuitesTLS13
 var defaultCipherSuitesTLS13 []uint16
 
-//go:linkname defaultCipherSuitesTLS13NoAES github.com/quic-go/qtls-go1-19.defaultCipherSuitesTLS13NoAES
+//go:linkname defaultCipherSuitesTLS13NoAES github.com/Psiphon-Labs/qtls-go1-19.defaultCipherSuitesTLS13NoAES
 var defaultCipherSuitesTLS13NoAES []uint16
 
 var cipherSuitesModified bool

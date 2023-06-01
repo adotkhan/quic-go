@@ -11,18 +11,17 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/quic-go/quic-go/internal/handshake"
-	mocklogging "github.com/quic-go/quic-go/internal/mocks/logging"
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/internal/qerr"
-	"github.com/quic-go/quic-go/internal/testdata"
-	"github.com/quic-go/quic-go/internal/utils"
-	"github.com/quic-go/quic-go/internal/wire"
-	"github.com/quic-go/quic-go/logging"
-
+	"github.com/Psiphon-Labs/quic-go/internal/handshake"
+	"github.com/Psiphon-Labs/quic-go/internal/protocol"
+	"github.com/Psiphon-Labs/quic-go/internal/qerr"
+	"github.com/Psiphon-Labs/quic-go/internal/utils"
+	"github.com/Psiphon-Labs/quic-go/internal/wire"
+	"github.com/Psiphon-Labs/quic-go/logging"
 	"github.com/golang/mock/gomock"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
+	mocklogging "github.com/Psiphon-Labs/quic-go/internal/mocks/logging"
+	"github.com/Psiphon-Labs/quic-go/internal/testdata"
 )
 
 var _ = Describe("Server", func() {

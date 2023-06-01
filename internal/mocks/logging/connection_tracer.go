@@ -9,11 +9,11 @@ import (
 	reflect "reflect"
 	time "time"
 
+	protocol "github.com/Psiphon-Labs/quic-go/internal/protocol"
+	utils "github.com/Psiphon-Labs/quic-go/internal/utils"
+	wire "github.com/Psiphon-Labs/quic-go/internal/wire"
+	logging "github.com/Psiphon-Labs/quic-go/logging" 
 	gomock "github.com/golang/mock/gomock"
-	protocol "github.com/quic-go/quic-go/internal/protocol"
-	utils "github.com/quic-go/quic-go/internal/utils"
-	wire "github.com/quic-go/quic-go/internal/wire"
-	logging "github.com/quic-go/quic-go/logging"
 )
 
 // MockConnectionTracer is a mock of ConnectionTracer interface.

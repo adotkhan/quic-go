@@ -13,15 +13,15 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/quic-go/quic-go/internal/ackhandler"
-	"github.com/quic-go/quic-go/internal/flowcontrol"
-	"github.com/quic-go/quic-go/internal/handshake"
-	"github.com/quic-go/quic-go/internal/logutils"
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/internal/qerr"
-	"github.com/quic-go/quic-go/internal/utils"
-	"github.com/quic-go/quic-go/internal/wire"
-	"github.com/quic-go/quic-go/logging"
+	"github.com/Psiphon-Labs/quic-go/internal/ackhandler"
+	"github.com/Psiphon-Labs/quic-go/internal/flowcontrol"
+	"github.com/Psiphon-Labs/quic-go/internal/handshake"
+	"github.com/Psiphon-Labs/quic-go/internal/logutils"
+	"github.com/Psiphon-Labs/quic-go/internal/protocol"
+	"github.com/Psiphon-Labs/quic-go/internal/qerr"
+	"github.com/Psiphon-Labs/quic-go/internal/utils"
+	"github.com/Psiphon-Labs/quic-go/internal/wire"
+	"github.com/Psiphon-Labs/quic-go/logging"
 )
 
 type unpacker interface {
@@ -316,7 +316,7 @@ var newConnection = func(
 		// different from protocol.DefaultActiveConnectionIDLimit.
 		// If set to the default value, it will be omitted from the transport parameters, which will make
 		// old quic-go versions interpret it as 0, instead of the default value of 2.
-		// See https://github.com/quic-go/quic-go/pull/3806.
+		// See https://github.com/Psiphon-Labs/quic-go/pull/3806.
 		ActiveConnectionIDLimit:   protocol.MaxActiveConnectionIDs,
 		InitialSourceConnectionID: srcConnID,
 		RetrySourceConnectionID:   retrySrcConnID,
@@ -435,7 +435,7 @@ var newClientConnection = func(
 		// different from protocol.DefaultActiveConnectionIDLimit.
 		// If set to the default value, it will be omitted from the transport parameters, which will make
 		// old quic-go versions interpret it as 0, instead of the default value of 2.
-		// See https://github.com/quic-go/quic-go/pull/3806.
+		// See https://github.com/Psiphon-Labs/quic-go/pull/3806.
 		ActiveConnectionIDLimit:   protocol.MaxActiveConnectionIDs,
 		InitialSourceConnectionID: srcConnID,
 	}

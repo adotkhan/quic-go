@@ -16,10 +16,9 @@ import (
 
 	"golang.org/x/sync/errgroup"
 
-	"github.com/quic-go/quic-go"
-	"github.com/quic-go/quic-go/http3"
-	"github.com/quic-go/quic-go/internal/protocol"
-
+	"github.com/Psiphon-Labs/quic-go"
+	"github.com/Psiphon-Labs/quic-go/http3"
+	"github.com/Psiphon-Labs/quic-go/internal/protocol"
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/gbytes"

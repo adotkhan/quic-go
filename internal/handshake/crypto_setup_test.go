@@ -10,17 +10,15 @@ import (
 	"math/big"
 	"time"
 
-	mocktls "github.com/quic-go/quic-go/internal/mocks/tls"
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/internal/qerr"
-	"github.com/quic-go/quic-go/internal/testdata"
-	"github.com/quic-go/quic-go/internal/utils"
-	"github.com/quic-go/quic-go/internal/wire"
-
+	"github.com/Psiphon-Labs/quic-go/internal/protocol"
+	"github.com/Psiphon-Labs/quic-go/internal/qerr"
+	"github.com/Psiphon-Labs/quic-go/internal/utils"
+	"github.com/Psiphon-Labs/quic-go/internal/wire"
 	"github.com/golang/mock/gomock"
-
 	. "github.com/onsi/ginkgo/v2"
 	. "github.com/onsi/gomega"
+	mocktls "github.com/Psiphon-Labs/quic-go/internal/mocks/tls"
+	"github.com/Psiphon-Labs/quic-go/internal/testdata"
 )
 
 var helloRetryRequestRandom = []byte{ // See RFC 8446, Section 4.1.3.

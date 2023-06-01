@@ -6,8 +6,8 @@ import (
 	"net"
 	"time"
 
-	"github.com/quic-go/quic-go/internal/handshake"
-	"github.com/quic-go/quic-go/internal/protocol"
+	"github.com/Psiphon-Labs/quic-go/internal/handshake"
+	"github.com/Psiphon-Labs/quic-go/internal/protocol"
 )
 
 func Fuzz(data []byte) int {

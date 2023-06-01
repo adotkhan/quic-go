@@ -8,9 +8,9 @@ import (
 	reflect "reflect"
 	time "time"
 
+	ackhandler "github.com/Psiphon-Labs/quic-go/internal/ackhandler"
+	protocol "github.com/Psiphon-Labs/quic-go/internal/protocol"
 	gomock "github.com/golang/mock/gomock"
-	ackhandler "github.com/quic-go/quic-go/internal/ackhandler"
-	protocol "github.com/quic-go/quic-go/internal/protocol"
 )
 
 // MockMTUDiscoverer is a mock of MTUDiscoverer interface.

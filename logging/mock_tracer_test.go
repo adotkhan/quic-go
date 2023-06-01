@@ -8,9 +8,9 @@ import (
 	net "net"
 	reflect "reflect"
 
+	protocol "github.com/Psiphon-Labs/quic-go/internal/protocol"
+	wire "github.com/Psiphon-Labs/quic-go/internal/wire" 
 	gomock "github.com/golang/mock/gomock"
-	protocol "github.com/quic-go/quic-go/internal/protocol"
-	wire "github.com/quic-go/quic-go/internal/wire"
 )
 
 // MockTracer is a mock of Tracer interface.

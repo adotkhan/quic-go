@@ -7,11 +7,10 @@ import (
 	"net"
 	"time"
 
-	mocklogging "github.com/quic-go/quic-go/internal/mocks/logging"
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/internal/utils"
-	"github.com/quic-go/quic-go/logging"
-
+	mocklogging "github.com/Psiphon-Labs/quic-go/internal/mocks/logging"
+	"github.com/Psiphon-Labs/quic-go/internal/protocol"
+	"github.com/Psiphon-Labs/quic-go/internal/utils"
+	"github.com/Psiphon-Labs/quic-go/logging"
 	"github.com/golang/mock/gomock"
 
 	. "github.com/onsi/ginkgo/v2"

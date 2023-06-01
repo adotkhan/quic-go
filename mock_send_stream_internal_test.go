@@ -9,11 +9,11 @@ import (
 	reflect "reflect"
 	time "time"
 
+	ackhandler "github.com/Psiphon-Labs/quic-go/internal/ackhandler"
+	protocol "github.com/Psiphon-Labs/quic-go/internal/protocol"
+	qerr "github.com/Psiphon-Labs/quic-go/internal/qerr"
+	wire "github.com/Psiphon-Labs/quic-go/internal/wire"
 	gomock "github.com/golang/mock/gomock"
-	ackhandler "github.com/quic-go/quic-go/internal/ackhandler"
-	protocol "github.com/quic-go/quic-go/internal/protocol"
-	qerr "github.com/quic-go/quic-go/internal/qerr"
-	wire "github.com/quic-go/quic-go/internal/wire"
 )
 
 // MockSendStreamI is a mock of SendStreamI interface.

@@ -5,10 +5,10 @@ import (
 	"math/rand"
 	"time"
 
-	"github.com/quic-go/quic-go"
-	"github.com/quic-go/quic-go/fuzzing/internal/helper"
-	"github.com/quic-go/quic-go/internal/protocol"
-	"github.com/quic-go/quic-go/internal/wire"
+	"github.com/Psiphon-Labs/quic-go"
+	"github.com/Psiphon-Labs/quic-go/fuzzing/internal/helper"
+	"github.com/Psiphon-Labs/quic-go/internal/protocol"
+	"github.com/Psiphon-Labs/quic-go/internal/wire"
 )
 
 const version = protocol.Version1
