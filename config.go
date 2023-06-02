@@ -124,5 +124,12 @@ func populateConfig(config *Config) *Config {
 		DisableVersionNegotiationPackets: config.DisableVersionNegotiationPackets,
 		Allow0RTT:                        config.Allow0RTT,
 		Tracer:                           config.Tracer,
+
+		// [Psiphon]
+		ClientHelloSeed:               config.ClientHelloSeed,
+		GetClientHelloRandom:          config.GetClientHelloRandom,
+		VerifyClientHelloRandom:       config.VerifyClientHelloRandom,
+		ClientMaxPacketSizeAdjustment: config.ClientMaxPacketSizeAdjustment,
+		ServerMaxPacketSizeAdjustment: config.ServerMaxPacketSizeAdjustment,
 	}
 }
