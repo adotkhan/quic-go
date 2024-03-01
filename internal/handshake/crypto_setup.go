@@ -111,7 +111,6 @@ func NewCryptoSetupClient(
 		TLSConfig: tlsConf,
 
 		// [Psiphon]
-
 		ExtraConfig: &qtls.ExtraConfig{
 			ClientHelloPRNG:      clientHelloPRNG,
 			GetClientHelloRandom: getClientHelloRandom,
