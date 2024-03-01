@@ -4,9 +4,8 @@ import (
 	"bytes"
 	"context"
 
-	tls "github.com/Psiphon-Labs/psiphon-tls"
+	"crypto/tls"
 
-	// "crypto/tls"
 	"crypto/x509"
 	"flag"
 	"fmt"
