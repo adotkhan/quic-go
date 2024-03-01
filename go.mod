@@ -3,7 +3,7 @@ module github.com/Psiphon-Labs/quic-go
 go 1.20
 
 require (
-	github.com/Psiphon-Labs/psiphon-tls v0.0.0-20240117165736-7e8cdfbe79bc
+	github.com/Psiphon-Labs/psiphon-tls v0.0.0-20240301004115-0bd3fb6285a1
 	github.com/Psiphon-Labs/psiphon-tunnel-core v2.0.28+incompatible
 	github.com/Psiphon-Labs/qtls-go1-20 v0.0.0-20231117202359-5544003bda6f
 	github.com/francoispqt/gojay v1.2.13
